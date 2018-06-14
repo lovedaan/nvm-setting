@@ -25,3 +25,16 @@ npm_mirror: https://npm.taobao.org/mirrors/npm/
 
 5. 同样的咱们可以下载其他版本的nodejs，这样通过命令:nvm use 版本号 比如：nvm use 5.11.0就可以轻松实现版本切换了。
 备注： 如果你的电脑系统是32 位的，那么在下载nodejs版本的时候，一定要指明 32 如： nvm install 5.11.0 32 这样在32位的电脑系统中，才可以使用，默认是64位的。
+
+6. 改变npm的下载目录
+
+```
+在用户目录下新建一个 .npmrc的文件，内容是下面
+
+cache = C:\dev\nvm\npm\npm-cache
+prefix = C:\dev\nvm\npm
+registry = http://registry.npm.taobao.org/
+disturl = https://npm.taobao.org/dist
+
+
+```
